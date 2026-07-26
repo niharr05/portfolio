@@ -1,343 +1,449 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nihar Ramoliya | Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio of Nihar Ramoliya, BCA Graduate and Aspiring Software Developer"
-    />
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nihar Ramoliya | Portfolio</title>
+  <meta name="description" content="Portfolio of Nihar Ramoliya, BCA Graduate and Aspiring Software Developer" />
 
-    <!-- Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  <!-- Favicons and Web Icons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#fafafa" />
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="nav-content container">
-        <a href="#" class="logo">NR.</a>
-        <ul class="nav-links">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="menu-toggle">
-          <i class="fas fa-bars"></i>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav-content container">
+      <a href="#" class="logo" aria-label="Nihar Ramoliya Home">NR.</a>
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+          <i class="fas fa-moon moon-icon"></i>
+          <i class="fas fa-sun sun-icon"></i>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero">
+    <div class="container hero-content">
+      <p class="greeting animate-fade-in">Hi, I'm</p>
+      <h1 class="name animate-slide-up">Nihar Ramoliya</h1>
+      <h2 class="title animate-slide-up delay-1">
+        BCA Graduate <span class="accent">|</span> Aspiring Software Developer <span class="accent">|</span> ML
+        Enthusiast
+      </h2>
+      <p class="tagline animate-slide-up delay-2">
+        Being new to the field of Machine Learning, my goal is to apply my
+        knowledge to design intelligent systems that benefit people. In the
+        realm of ML, I have built a strong foundation using tools like
+        Statistics, Python, and Deep Learning libraries. To me, every dataset
+        represents a challenge that I am motivated to overcome. I am
+        passionate about pushing boundaries and designing innovative solutions
+        with maximum efficiency.
+      </p>
+      <div class="hero-actions animate-slide-up delay-3">
+        <a href="#projects" class="btn btn-primary btn-lg">View Projects</a>
+        <a href="#contact" class="btn btn-secondary btn-lg">Get in Touch</a>
+      </div>
+      <div class="hero-stats animate-fade-in delay-4 stagger-children">
+        <div class="stat-item">
+          <span class="stat-value">4+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">6+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">1</span>
+          <span class="stat-label">Degree</span>
         </div>
       </div>
-    </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <header id="hero" class="section">
-      <div class="container hero-content">
-        <p class="greeting animate-fade-in">Hi, I'm</p>
-        <h1 class="name animate-slide-up">Nihar Ramoliya</h1>
-        <h2 class="title animate-slide-up delay-1">
-          BCA Graduate | Aspiring Software Developer | ML Enthusiast
-        </h2>
-        <p class="tagline animate-slide-up delay-2">
-          Being new to the field of Machine Learning, my goal is to apply my
-          knowledge to design intelligent systems that benefit people. In the
-          realm of ML, I have built a strong foundation using tools like
-          Statistics, Python, and Deep Learning libraries. To me, every dataset
-          represents a challenge that I am motivated to overcome. I am
-          passionate about pushing boundaries and designing innovative solutions
-          with maximum efficiency.
-        </p>
-        <div class="hero-actions animate-slide-up delay-3">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-        </div>
-      </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="section bg-light">
-      <div class="container">
-        <h2 class="section-title fade-in-section">About Me</h2>
-        <div class="about-content fade-in-section">
-          <div class="about-text">
-            <p>
-              Motivated and detail-oriented BCA graduate with a strong
-              foundation in programming, web development, and software design.
-            </p>
-            <p>
-              Currently exploring Machine Learning concepts and building
-              beginner-level ML projects. Passionate about learning new
-              technologies and solving real-world problems.
-            </p>
+  <!-- About Section -->
+  <section id="about" class="section bg-subtle" aria-labelledby="about-title">
+    <div class="container">
+      <header class="section-header reveal">
+        <h2 id="about-title" class="section-title">About Me</h2>
+        <p class="section-subtitle">Get to know me better</p>
+      </header>
+      <div class="about-grid reveal stagger-children">
+        <div class="about-text">
+          <p>
+            Motivated and detail-oriented BCA graduate with a strong
+            foundation in programming, web development, and software design.
+          </p>
+          <p>
+            Currently exploring Machine Learning concepts and building
+            beginner-level ML projects. Passionate about learning new
+            technologies and solving real-world problems.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-code"></i></div>
+              <div class="highlight-content">
+                <h4>Clean Code Advocate</h4>
+                <p>Writing maintainable, scalable code with best practices</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-brain"></i></div>
+              <div class="highlight-content">
+                <h4>ML Enthusiast</h4>
+                <p>Building projects with Scikit-learn, Pandas, NumPy</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div class="highlight-content">
+                <h4>Continuous Learner</h4>
+                <p>Always exploring new frameworks and paradigms</p>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="about-visual">
+          <div class="visual-placeholder"><i class="fas fa-user"></i></div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-      <div class="container">
-        <h2 class="section-title fade-in-section">My Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-category fade-in-section delay-1">
+  <!-- Skills Section -->
+  <section id="skills" class="section" aria-labelledby="skills-title">
+    <div class="container">
+      <header class="section-header reveal">
+        <h2 id="skills-title" class="section-title">My Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </header>
+      <div class="skills-grid stagger-children">
+        <div class="skill-category reveal">
+          <div class="category-header">
             <div class="category-icon"><i class="fas fa-code"></i></div>
-            <h3>Programming</h3>
-            <div class="skill-badges">
-              <span class="badge">C</span>
-              <span class="badge">C++</span>
-              <span class="badge">Python</span>
-              <span class="badge">Java (Basic)</span>
-            </div>
+            <h3 class="category-title">Programming</h3>
           </div>
-          <div class="skill-category fade-in-section delay-2">
+          <div class="skill-badges">
+            <span class="badge">C</span>
+            <span class="badge">C++</span>
+            <span class="badge">Python</span>
+            <span class="badge">Java (Basic)</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="category-header">
             <div class="category-icon"><i class="fas fa-globe"></i></div>
-            <h3>Web Development</h3>
-            <div class="skill-badges">
-              <span class="badge">HTML5</span>
-              <span class="badge">CSS3</span>
-              <span class="badge">JavaScript</span>
-            </div>
+            <h3 class="category-title">Web Development</h3>
           </div>
-          <div class="skill-category fade-in-section delay-3">
+          <div class="skill-badges">
+            <span class="badge">HTML5</span>
+            <span class="badge">CSS3</span>
+            <span class="badge">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="category-header">
             <div class="category-icon"><i class="fas fa-brain"></i></div>
-            <h3>
-              Machine Learning <br /><span
-                style="
-                  font-size: 0.8rem;
-                  font-weight: 400;
-                  color: var(--clr-text-light);
-                "
-                >(Basic Knowledge)</span
-              >
-            </h3>
-            <div class="skill-badges">
-              <span class="badge">NumPy</span>
-              <span class="badge">Pandas</span>
-              <span class="badge">Plotly & Matplotlib</span>
-              <span class="badge">Scikit-learn (K-Means)</span>
-              <span class="badge">Data Preprocessing</span>
-              <span class="badge">Supervised Learning</span>
-            </div>
+            <h3 class="category-title">Machine Learning</h3>
           </div>
-          <div class="skill-category fade-in-section delay-4">
+          <div class="skill-badges">
+            <span class="badge">NumPy</span>
+            <span class="badge">Pandas</span>
+            <span class="badge">Plotly &amp; Matplotlib</span>
+            <span class="badge">Scikit-learn (K-Means)</span>
+            <span class="badge">Data Preprocessing</span>
+            <span class="badge">Supervised Learning</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="category-header">
             <div class="category-icon"><i class="fas fa-chart-line"></i></div>
-            <h3>Data Analysis</h3>
-            <div class="skill-badges">
-              <span class="badge">EDA</span>
-              <span class="badge">Pareto Analysis</span>
-              <span class="badge">KPI Dashboards</span>
-              <span class="badge">Streamlit</span>
-            </div>
+            <h3 class="category-title">Data Analysis</h3>
           </div>
-          <div class="skill-category fade-in-section delay-4">
+          <div class="skill-badges">
+            <span class="badge">EDA</span>
+            <span class="badge">Pareto Analysis</span>
+            <span class="badge">KPI Dashboards</span>
+            <span class="badge">Streamlit</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="category-header">
             <div class="category-icon"><i class="fas fa-database"></i></div>
-            <h3>Database</h3>
-            <div class="skill-badges">
-              <span class="badge">MySQL</span>
-              <span class="badge">SQL</span>
-            </div>
+            <h3 class="category-title">Database</h3>
           </div>
-          <div class="skill-category fade-in-section delay-4">
+          <div class="skill-badges">
+            <span class="badge">MySQL</span>
+            <span class="badge">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="category-header">
             <div class="category-icon"><i class="fas fa-tools"></i></div>
-            <h3>Tools & Tech</h3>
-            <div class="skill-badges">
-              <span class="badge">Git</span>
-              <span class="badge">GitHub</span>
-              <span class="badge">VS Code</span>
-            </div>
+            <h3 class="category-title">Tools &amp; Tech</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">Git</span>
+            <span class="badge">GitHub</span>
+            <span class="badge">VS Code</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section bg-light">
-      <div class="container">
-        <h2 class="section-title fade-in-section">Projects</h2>
-        <div class="projects-grid">
-          <!-- Project 1-->
-          <div class="project-card fade-in-section delay-1">
-            <div class="project-content">
-              <div class="project-header">
-                <i class="far fa-folder project-folder"></i>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/niharr05/portfolio.git"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub Link"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </div>
-              </div>
-              <h3 class="project-title">Portfolio Website</h3>
-              <p class="project-description">
-                Personal responsive portfolio website built to showcase my
-                skills, projects, and professional background.
-              </p>
-              <ul class="project-tech-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-            </div>
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-subtle" aria-labelledby="projects-title">
+    <div class="container">
+      <header class="section-header reveal">
+        <h2 id="projects-title" class="section-title">Projects</h2>
+        <p class="section-subtitle">A selection of my recent work</p>
+      </header>
+      <div class="projects-grid stagger-children">
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-folder-open"></i></div>
           </div>
+          <div class="project-content">
+            <div class="project-header">
+              <div class="project-folder"><i class="far fa-folder"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/niharr05/portfolio.git" target="_blank" rel="noopener noreferrer"
+                  class="project-link" aria-label="View Portfolio on GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-description">
+              Personal responsive portfolio website built to showcase my
+              skills, projects, and professional background with modern animations.
+            </p>
+            <ul class="project-tech-list">
+              <li class="tech-tag">HTML</li>
+              <li class="tech-tag">CSS</li>
+              <li class="tech-tag">JavaScript</li>
+            </ul>
+          </div>
+        </article>
 
-          <!-- Project 2 -->
-          <div class="project-card fade-in-section delay-2">
-            <div class="project-content">
-              <div class="project-header">
-                <i class="far fa-folder project-folder"></i>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/niharr05/FinCalc-Pro.git"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub Link"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </div>
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-calculator"></i></div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <div class="project-folder"><i class="far fa-folder"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/niharr05/FinCalc-Pro.git" target="_blank" rel="noopener noreferrer"
+                  class="project-link" aria-label="View FinCalc-Pro on GitHub"><i class="fab fa-github"></i></a>
               </div>
-              <h3 class="project-title">FinCalc-Pro</h3>
-              <p class="project-description">
-                A modern, professional, fully responsive Compound Interest
-                Calculator built with pure HTML, CSS & Vanilla JavaScript.
-                Designed to look and feel like a real-world financial tool used
-                by banks and investment platforms.
-              </p>
+            </div>
+            <h3 class="project-title">FinCalc-Pro</h3>
+            <p class="project-description">
+              A modern, professional, fully responsive Compound Interest
+              Calculator built with pure HTML, CSS &amp; Vanilla JavaScript.
+              Designed to look and feel like a real-world financial tool used
+              by banks and investment platforms.
+            </p>
+            <ul class="project-tech-list">
+              <li class="tech-tag">HTML</li>
+              <li class="tech-tag">CSS</li>
+              <li class="tech-tag">JavaScript</li>
+            </ul>
+          </div>
+        </article>
 
-              <ul class="project-tech-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-            </div>
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-chart-bar"></i></div>
           </div>
-          <!-- Project 3 -->
-          <div class="project-card fade-in-section delay-3">
-            <div class="project-content">
-              <div class="project-header">
-                <i class="far fa-folder project-folder"></i>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/niharr05/EduPredict-AI"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub Link"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </div>
+          <div class="project-content">
+            <div class="project-header">
+              <div class="project-folder"><i class="far fa-folder"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/niharr05/EduPredict-AI" target="_blank" rel="noopener noreferrer"
+                  class="project-link" aria-label="View EduPredict-AI on GitHub"><i class="fab fa-github"></i></a>
               </div>
-              <h3 class="project-title">Student Performance Prediction</h3>
-              <p class="project-description">
-                Predicting student performance using basic machine learning
-                techniques. A beginner-level project exploring data.
-              </p>
-              <ul class="project-tech-list">
-                <li>Python</li>
-                <li>Pandas</li>
-                <li>NumPy</li>
-              </ul>
             </div>
+            <h3 class="project-title">Student Performance Prediction</h3>
+            <p class="project-description">
+              Predicting student performance using basic machine learning
+              techniques. A beginner-level project exploring data analysis
+              and predictive modeling.
+            </p>
+            <ul class="project-tech-list">
+              <li class="tech-tag">Python</li>
+              <li class="tech-tag">Pandas</li>
+              <li class="tech-tag">NumPy</li>
+            </ul>
           </div>
+        </article>
 
-          <!-- Project 4 -->
-          <div class="project-card fade-in-section delay-4">
-            <div class="project-content">
-              <div class="project-header">
-                <i class="far fa-folder project-folder"></i>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/niharr05/nassau-candy-profit-analysis.git"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub Link"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </div>
-              </div>
-              <h3 class="project-title">Nassau Candy Profit Analysis</h3>
-              <p class="project-description">
-                An end-to-end analytics project featuring an interactive
-                Streamlit dashboard. It performs Pareto (80/20) analysis,
-                K-Means clustering for product segmentation, and monitors
-                logistics efficiency across US regions.
-              </p>
-              <ul class="project-tech-list">
-                <li>Python</li>
-                <li>Streamlit</li>
-                <li>Scikit-learn</li>
-                <li>Plotly</li>
-              </ul>
-            </div>
+        <!-- Project 4 -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-chart-pie"></i></div>
           </div>
-        </div>
+          <div class="project-content">
+            <div class="project-header">
+              <div class="project-folder"><i class="far fa-folder"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/niharr05/nassau-candy-profit-analysis.git" target="_blank"
+                  rel="noopener noreferrer" class="project-link" aria-label="View Nassau Candy Analysis on GitHub"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Nassau Candy Profit Analysis</h3>
+            <p class="project-description">
+              An end-to-end analytics project featuring an interactive
+              Streamlit dashboard. It performs Pareto (80/20) analysis,
+              K-Means clustering for product segmentation, and monitors
+              logistics efficiency across US regions.
+            </p>
+            <ul class="project-tech-list">
+              <li class="tech-tag">Python</li>
+              <li class="tech-tag">Streamlit</li>
+              <li class="tech-tag">Scikit-learn</li>
+              <li class="tech-tag">Plotly</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-chart-pie"></i></div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <div class="project-folder"><i class="far fa-folder"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/niharr05/customer-retention-analytics.git" target="_blank"
+                  rel="noopener noreferrer" class="project-link"
+                  aria-label="View Customer Retention Analysis on GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Customer Retention Analysis</h3>
+            <p class="project-description">
+              An end-to-end retail banking analytics platform that transforms raw customer data into an executive-ready
+              retention strategy toolkit — combining a production-grade Python analytics pipeline with an interactive
+              Streamlit dashboard.
+            </p>
+            <ul class="project-tech-list">
+              <li class="tech-tag">Python</li>
+              <li class="tech-tag">Streamlit</li>
+              <li class="tech-tag">Scikit-learn</li>
+              <li class="tech-tag">Plotly</li>
+              <li class="tech-tag">Pandas</li>
+            </ul>
+          </div>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <div class="container text-center fade-in-section">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="contact-subtitle">
+  <!-- Contact Section -->
+  <section id="contact" class="section" aria-labelledby="contact-title">
+    <div class="container">
+      <header class="section-header text-center reveal">
+        <h2 id="contact-title" class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">
           I'm currently looking for new opportunities. Whether you have a
           question or just want to say hi, I'll try my best to get back to you!
         </p>
-
+      </header>
+      <div class="contact-grid reveal stagger-children">
         <div class="contact-info">
           <a href="mailto:nihar.ramoliya05@gmail.com" class="contact-item">
-            <i class="fas fa-envelope"></i> nihar.ramoliya05@gmail.com
+            <i class="fas fa-envelope"></i>
+            <span>nihar.ramoliya05@gmail.com</span>
           </a>
           <a href="tel:+919512023872" class="contact-item">
-            <i class="fas fa-phone"></i> +91 9512023872
+            <i class="fas fa-phone"></i>
+            <span>+91&nbsp;9512023872</span>
           </a>
+          <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/niharr05" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
         </div>
-
-        <div class="social-links">
-          <a
-            href="https://www.linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-icon"
-            aria-label="LinkedIn"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a
-            href="https://github.com/niharr05"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-icon"
-            aria-label="GitHub"
-            ><i class="fab fa-github"></i
-          ></a>
-        </div>
-
-        <a href="mailto:nihar.ramoliya05@gmail.com" class="btn btn-primary mt-4"
-          >Say Hello</a
-        >
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?">
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Your message..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg form-submit">Send Message</button>
+        </form>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>&copy; 2025 Nihar Ramoliya. Built with passion.</p>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-copyright">&copy; 2025 Nihar Ramoliya. Built with passion.</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#hero" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </nav>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
